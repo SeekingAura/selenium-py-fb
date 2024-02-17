@@ -1,0 +1,24 @@
+{
+    "recommendations": [
+        // Python
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "njpwerner.autodocstring",
+        
+        // Git
+        "eamodio.gitlens",
+
+        // Markdown
+        "yzhang.markdown-all-in-one",
+
+        // Visual code manage
+        "PKief.material-icon-theme",
+        "wengerk.highlight-bad-chars",
+
+        // Coding management Gen
+        "streetsidesoftware.code-spell-checker",
+        "dotenv.dotenv-vscode",
+        "earshinov.sort-lines-by-selection"
+    ]
+}

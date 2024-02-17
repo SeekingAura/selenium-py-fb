@@ -1,0 +1,115 @@
+{
+    "[python]": {
+        "editor.rulers": [
+            {
+                "column": 79,
+                "color": "#eeff0070"
+            },
+            {
+                "column": 119,
+                "color": "#00ff0067"
+            }
+        ],
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingTypeStubs": "information",
+        "reportUnknownMemberType": "information"
+    },
+    "isort.check": true,
+    // Allow python with virtual env on powershell
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+          "source": "PowerShell",
+          "icon": "terminal-powershell",
+          "args": ["-ExecutionPolicy", "Bypass"]
+        }
+      },
+      "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // Editor
+    // "editor.defaultFormatter": null,
+    "files.exclude": {
+        "**/.venv": true,
+        "**/__pycache__/": true,
+    },
+    "search.exclude": {
+        "**/__pycache__/": true,
+        "**/.venv": true,
+        "**/locale": true,
+    },
+    "files.eol": "\r\n",
+    "files.associations": {
+        "*.env*": "dotenv",
+    },
+    "editor.scrollbar.vertical": "auto",
+    "editor.overviewRulerBorder": true,
+    "editor.minimap.enabled": false,
+    "editor.glyphMargin": false, // Debug
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": "active",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.activityBar.location": "top",
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolSortOrder": "type",
+    "material-icon-theme.languages.associations": {
+        "dotenv": "tune",
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    // Terminal
+    "terminal.integrated.sendKeybindingsToShell": false,
+    // cSpell
+    "cSpell.diagnosticLevel": "Information",
+    "cSpell.customDictionaries": {
+        "readme": {
+            "name": "readme",
+            "path": "${workspaceRoot}/.vscode/cspell-readme.txt",
+            "description": "Words used at markdown files",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+        },
+        "python": {
+            "name": "python",
+            "path": "${workspaceRoot}/.vscode/cspell-python.txt",
+            "description": "Words used at python files",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+        },
+        "project-vars": {
+            "name": "project-vars",
+            "path": "${workspaceRoot}/.vscode/cspell-project-vars.txt",
+            "description": "Words used at project-vars files",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+          },
+          "project-accents": {
+            "name": "project-accents",
+            "path": "${workspaceRoot}/.vscode/cspell-project-accents.txt",
+            "description": "Words used for skip spanish accents",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+          },
+    },
+    "cSpell.dictionaries": [
+        // To disable a custom dict set !name, by default are enabled
+        // "!readme"
+    ],
+    // WSL case
+    "remote.extensionKind": {
+        "quicktype.quicktype": [ "ui" ],
+        "ms-azuretools.vscode-docker": [ "workspace" ],
+    },
+    "remote.autoForwardPorts": false,
+    "cSpell.language": "en",
+}
