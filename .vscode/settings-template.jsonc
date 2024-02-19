@@ -25,12 +25,17 @@
     // Allow python with virtual env on powershell
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
-          "source": "PowerShell",
-          "icon": "terminal-powershell",
-          "args": ["-ExecutionPolicy", "Bypass"]
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-ExecutionPolicy", "Bypass",
+                "-noexit",
+                "-file",
+                "${workspaceFolder}/.venv/Scripts/activate.ps1"
+            ],
         }
-      },
-      "terminal.integrated.defaultProfile.windows": "PowerShell",
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     // Editor
     // "editor.defaultFormatter": null,
     "files.exclude": {
